@@ -38,7 +38,7 @@ def starting_environment(list list_of_models):
 
 
 
-def set_growth_media(model, tuple new_flux_value):
+def c_set_growth_media(model, tuple new_flux_value):
     '''set the minimum flux of an exchange reaction and optimize the model.
     Inputs is a model and a tuple with the name of the exchange reaction 
     and a value for the flux. Output is a float with the solution of the model'''
@@ -56,7 +56,7 @@ def set_growth_media(model, tuple new_flux_value):
 
 
 
-def Metropolis (numpy.ndarray new_value_array, numpy.ndarray current_value_array, numpy.ndarray relative_abundances):
+def c_Metropolis (numpy.ndarray new_value_array, numpy.ndarray current_value_array, numpy.ndarray relative_abundances):
     '''version of the Metropolis MCMC algorithm. Inputs are three numpy arrays containing a current distribution of 
     objective functions, a candidate distribution and an optimal distribution based on measured relative abundances 
     of bacteria.
